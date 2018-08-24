@@ -10,12 +10,12 @@ protocol PullUpToRefreshDelegate: class {
     func tableviewDidPullUp()
 }
 
-class PullUpToRefreshTableview: UITableView, UITableViewDelegate {
+public class PullUpToRefreshTableview: UITableView, UITableViewDelegate {
     
     // MARK: Customization vars
-    var differenceThreshold: CGFloat = 10.0
-    var refreshThreshold: CGFloat = 100
-    var bottomView: UIView = UIView()
+    public var differenceThreshold: CGFloat = 10.0
+    public var refreshThreshold: CGFloat = 100
+    public var bottomView: UIView = UIView()
     weak var pullUpToRefreshDelegate: PullUpToRefreshDelegate?
     
     // MARK: Private vars
@@ -23,7 +23,7 @@ class PullUpToRefreshTableview: UITableView, UITableViewDelegate {
     fileprivate var isBottomViewAdded = false
     fileprivate var animationDuration: Double = 0.2
     
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         self.delegate = self
     }
@@ -44,7 +44,7 @@ class PullUpToRefreshTableview: UITableView, UITableViewDelegate {
         return contentSize > tableSize
     }
     
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         let isLoadingFromBottom = self.isLoadingFromBottom()
         let scrollingDistance = calculateScrollingDistance()
         // if the user scrolled from the tabelview bottom and passed the threshold , then save the current position
@@ -54,7 +54,7 @@ class PullUpToRefreshTableview: UITableView, UITableViewDelegate {
         }
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let isLoadingFromBottom = self.isLoadingFromBottom()
         let scrollingDistance = calculateScrollingDistance()
@@ -73,7 +73,7 @@ class PullUpToRefreshTableview: UITableView, UITableViewDelegate {
         }
     }
     
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         
         let isLoadingFromBottom = self.isLoadingFromBottom()
         let scrollingDistance = calculateScrollingDistance()
@@ -91,7 +91,7 @@ class PullUpToRefreshTableview: UITableView, UITableViewDelegate {
     }
     
     // remove bottomView after finishing scroll
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         // remove bottomView
         UIView.animate(withDuration: animationDuration) {
             scrollView.contentInset.bottom = self.previousScrollingPosition
