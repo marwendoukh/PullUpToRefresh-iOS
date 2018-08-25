@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "PullUpToRefresh"
-s.version      = "0.1.6"
+s.version      = "0.1.7"
 s.summary      = "PullUpToRefresh in tableview bottom"
 
 s.description  = <<-DESC
