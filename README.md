@@ -1,5 +1,6 @@
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/PullUpToRefresh.svg)](https://cocoapods.org/pods/PullUpToRefresh)
-[![Platform](https://img.shields.io/cocoapods/p/PullUpToRefresh.svg?style=flat)](https://cocoapods.org/pods/PullUpToRefresh)
+[![Platform](https://img.shields.io/cocoapods/p/PullUpToRefresh.svg)](https://cocoapods.org/pods/PullUpToRefresh)
+[![Downloads](https://img.shields.io/cocoapods/dt/PullUpToRefresh.svg)](https://cocoapods.org/pods/PullUpToRefresh)
 
 # PullUpToRefresh - iOS
 Pull up to refresh is a Swift library that adds pull to refresh capability to tableview bottom.
