@@ -13,7 +13,7 @@ Add this to your <code>Podfile</code>
 
 * Set your tableview custom Class to <code>PullUpToRefreshTableview</code>
 
-* Implement the <code>pullUpToRefreshDelegate</code> in your <code>UIViewController</code>
+* Implement the <code>PullUpToRefreshTableviewDelegate</code> in your <code>UIViewController</code>
 
 # Customization
 
