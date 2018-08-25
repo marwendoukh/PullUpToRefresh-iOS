@@ -10,7 +10,7 @@
 		19FB7F522130B1C5007BD1F8 /* PullUpToRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FB7F482130B1C5007BD1F8 /* PullUpToRefresh.framework */; };
 		19FB7F572130B1C5007BD1F8 /* PullUpToRefreshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB7F562130B1C5007BD1F8 /* PullUpToRefreshTests.swift */; };
 		19FB7F592130B1C5007BD1F8 /* PullUpToRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 19FB7F4B2130B1C5007BD1F8 /* PullUpToRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19FB7F632130B317007BD1F8 /* PullUpToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB7F622130B317007BD1F8 /* PullUpToRefresh.swift */; };
+		19FB7F632130B317007BD1F8 /* PullUpToRefreshTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB7F622130B317007BD1F8 /* PullUpToRefreshTableview.swift */; };
 		40D1989481F48B0BEAEAC21C /* Pods_PullUpToRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C34064930661A2E1ACA6C80 /* Pods_PullUpToRefresh.framework */; };
 		79FE025A7CBA2B2878487147 /* Pods_PullUpToRefreshTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD9F68FFD6596D6D2B11E38 /* Pods_PullUpToRefreshTests.framework */; };
 /* End PBXBuildFile section */
@@ -32,7 +32,7 @@
 		19FB7F512130B1C5007BD1F8 /* PullUpToRefreshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PullUpToRefreshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FB7F562130B1C5007BD1F8 /* PullUpToRefreshTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullUpToRefreshTests.swift; sourceTree = "<group>"; };
 		19FB7F582130B1C5007BD1F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19FB7F622130B317007BD1F8 /* PullUpToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullUpToRefresh.swift; sourceTree = "<group>"; };
+		19FB7F622130B317007BD1F8 /* PullUpToRefreshTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullUpToRefreshTableview.swift; sourceTree = "<group>"; };
 		47C7B5ECE764A3CEABEA4A72 /* Pods-PullUpToRefreshTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PullUpToRefreshTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PullUpToRefreshTests/Pods-PullUpToRefreshTests.release.xcconfig"; sourceTree = "<group>"; };
 		8C34064930661A2E1ACA6C80 /* Pods_PullUpToRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PullUpToRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB93EDD596D1642F8F167097 /* Pods-PullUpToRefreshTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PullUpToRefreshTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PullUpToRefreshTests/Pods-PullUpToRefreshTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 			children = (
 				19FB7F4B2130B1C5007BD1F8 /* PullUpToRefresh.h */,
 				19FB7F4C2130B1C5007BD1F8 /* Info.plist */,
-				19FB7F622130B317007BD1F8 /* PullUpToRefresh.swift */,
+				19FB7F622130B317007BD1F8 /* PullUpToRefreshTableview.swift */,
 			);
 			path = PullUpToRefresh;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19FB7F632130B317007BD1F8 /* PullUpToRefresh.swift in Sources */,
+				19FB7F632130B317007BD1F8 /* PullUpToRefreshTableview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

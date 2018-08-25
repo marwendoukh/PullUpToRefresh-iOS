@@ -1,22 +1,24 @@
 //
-// PullUpToRefresh.swift
+// PullUpToRefreshTableview.swift
 //
 // Created by Marwen on 17/08/2018.
 // Copyright :Marwen Doukh 2018. All rights reserved.
 //
 
 // MARK: Delegate
-protocol PullUpToRefreshDelegate: class {
+@objc public protocol PullUpToRefreshTableviewDelegate: class {
     func tableviewDidPullUp()
 }
 
 public class PullUpToRefreshTableview: UITableView, UITableViewDelegate {
     
     // MARK: Customization vars
+    @IBInspectable
     public var differenceThreshold: CGFloat = 10.0
+    @IBInspectable
     public var refreshThreshold: CGFloat = 100
     public var bottomView: UIView = UIView()
-    weak var pullUpToRefreshDelegate: PullUpToRefreshDelegate?
+    @IBOutlet public weak var pullUpToRefreshDelegate: PullUpToRefreshTableviewDelegate?
     
     // MARK: Private vars
     fileprivate var previousScrollingPosition: CGFloat = 0.0
