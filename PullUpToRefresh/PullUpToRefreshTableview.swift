@@ -86,9 +86,11 @@ class PullUpToRefreshTableview: UITableView, UITableViewDelegate {
     
     // remove bottomView
     isBottomViewAdded = false
-    UIView.animate(withDuration: animationDuration) {
-      scrollView.contentInset.bottom = self.previousScrollingPosition
-      self.tableFooterView = nil
+    DispatchQueue.main.async {
+      UIView.animate(withDuration: self.animationDuration) {
+        scrollView.contentInset.bottom = self.previousScrollingPosition
+        self.tableFooterView = nil
+      }
     }
   }
   
