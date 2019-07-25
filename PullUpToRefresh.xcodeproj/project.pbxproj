@@ -13,6 +13,7 @@
 		1964046C22E98CCE00D20E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1964046B22E98CCE00D20E41 /* Assets.xcassets */; };
 		1964046F22E98CCE00D20E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1964046D22E98CCE00D20E41 /* LaunchScreen.storyboard */; };
 		1964047822E98D7400D20E41 /* PullUpToRefreshTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1964047722E98D7400D20E41 /* PullUpToRefreshTableview.swift */; };
+		1964047A22E9963A00D20E41 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1964047922E9963A00D20E41 /* MyCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1964046E22E98CCE00D20E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1964047022E98CCE00D20E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1964047722E98D7400D20E41 /* PullUpToRefreshTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullUpToRefreshTableview.swift; sourceTree = "<group>"; };
+		1964047922E9963A00D20E41 /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1964046B22E98CCE00D20E41 /* Assets.xcassets */,
 				1964046D22E98CCE00D20E41 /* LaunchScreen.storyboard */,
 				1964047022E98CCE00D20E41 /* Info.plist */,
+				1964047922E9963A00D20E41 /* MyCustomCell.swift */,
 			);
 			path = PullUpToRefresh;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			files = (
 				1964046722E98CC500D20E41 /* ViewController.swift in Sources */,
 				1964046522E98CC500D20E41 /* AppDelegate.swift in Sources */,
+				1964047A22E9963A00D20E41 /* MyCustomCell.swift in Sources */,
 				1964047822E98D7400D20E41 /* PullUpToRefreshTableview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
