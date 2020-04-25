@@ -14,6 +14,8 @@
 		1964046F22E98CCE00D20E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1964046D22E98CCE00D20E41 /* LaunchScreen.storyboard */; };
 		1964047822E98D7400D20E41 /* PullUpToRefreshTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1964047722E98D7400D20E41 /* PullUpToRefreshTableview.swift */; };
 		1964047A22E9963A00D20E41 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1964047922E9963A00D20E41 /* MyCustomCell.swift */; };
+		E00D7095244FA3AD002E4B9E /* CustomBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00D7094244FA3AD002E4B9E /* CustomBottomView.swift */; };
+		E0A8F2A2244F9B45006FACD0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E0A8F2A1244F9B45006FACD0 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1964047022E98CCE00D20E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1964047722E98D7400D20E41 /* PullUpToRefreshTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullUpToRefreshTableview.swift; sourceTree = "<group>"; };
 		1964047922E9963A00D20E41 /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
+		E00D7094244FA3AD002E4B9E /* CustomBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBottomView.swift; sourceTree = "<group>"; };
+		E0A8F2A1244F9B45006FACD0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,24 +62,34 @@
 		1964046322E98CC400D20E41 /* PullUpToRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				1964047622E98D3700D20E41 /* PullUpToRefresh */,
+				E0A8F2A1244F9B45006FACD0 /* README.md */,
+				1964047622E98D3700D20E41 /* Source */,
 				1964046422E98CC500D20E41 /* AppDelegate.swift */,
-				1964046622E98CC500D20E41 /* ViewController.swift */,
+				E0A8F2A3244F9C19006FACD0 /* Example */,
 				1964046822E98CC500D20E41 /* Main.storyboard */,
 				1964046B22E98CCE00D20E41 /* Assets.xcassets */,
 				1964046D22E98CCE00D20E41 /* LaunchScreen.storyboard */,
 				1964047022E98CCE00D20E41 /* Info.plist */,
-				1964047922E9963A00D20E41 /* MyCustomCell.swift */,
 			);
 			path = PullUpToRefresh;
 			sourceTree = "<group>";
 		};
-		1964047622E98D3700D20E41 /* PullUpToRefresh */ = {
+		1964047622E98D3700D20E41 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				1964047722E98D7400D20E41 /* PullUpToRefreshTableview.swift */,
 			);
-			path = PullUpToRefresh;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E0A8F2A3244F9C19006FACD0 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				1964046622E98CC500D20E41 /* ViewController.swift */,
+				1964047922E9963A00D20E41 /* MyCustomCell.swift */,
+				E00D7094244FA3AD002E4B9E /* CustomBottomView.swift */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,7 @@
 			files = (
 				1964046F22E98CCE00D20E41 /* LaunchScreen.storyboard in Resources */,
 				1964046C22E98CCE00D20E41 /* Assets.xcassets in Resources */,
+				E0A8F2A2244F9B45006FACD0 /* README.md in Resources */,
 				1964046A22E98CC500D20E41 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +167,7 @@
 			files = (
 				1964046722E98CC500D20E41 /* ViewController.swift in Sources */,
 				1964046522E98CC500D20E41 /* AppDelegate.swift in Sources */,
+				E00D7095244FA3AD002E4B9E /* CustomBottomView.swift in Sources */,
 				1964047A22E9963A00D20E41 /* MyCustomCell.swift in Sources */,
 				1964047822E98D7400D20E41 /* PullUpToRefreshTableview.swift in Sources */,
 			);
@@ -299,6 +315,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PullUpToRefresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +333,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PullUpToRefresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

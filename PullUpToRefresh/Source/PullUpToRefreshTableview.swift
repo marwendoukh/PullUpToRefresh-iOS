@@ -17,14 +17,12 @@ class PullUpToRefreshTableview: UITableView, UITableViewDelegate {
     
     // MARK: Customization vars
     @IBInspectable
-    public var differenceThreshold: CGFloat = 10.0
+    public var differenceThreshold: CGFloat = 50.0
     @IBInspectable
     public var refreshThreshold: CGFloat = 100
     public var bottomView: UIView = UIView()
     @IBOutlet
     public weak var pullUpToRefreshDelegate: PullUpToRefreshDelegate?
-    
-    
     
     // MARK: Private vars
     fileprivate var previousScrollingPosition: CGFloat = 0.0

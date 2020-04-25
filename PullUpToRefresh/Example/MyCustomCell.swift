@@ -9,10 +9,5 @@
 import UIKit
 
 class MyCustomCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
+    @IBOutlet weak var label: UILabel?
 }

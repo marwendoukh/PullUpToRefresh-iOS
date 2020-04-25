@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "PullUpToRefresh"
-s.version      = "0.6.1"
+s.version      = "0.6.2"
 s.summary      = "PullUpToRefresh in tableview bottom"
 
 s.description  = <<-DESC
@@ -11,9 +11,9 @@ DESC
 s.homepage     = "https://github.com/marwendoukh/PullUpToRefresh-iOS"
 s.license      = { :type => "MIT", :file => "LICENSE" }
 s.author             = { "Marwen Doukh" => "marwen.doukh@protonmail.com" }
-s.platform     = :ios, "11.0"
+s.platform     = :ios, "12.0"
 s.source       = { :git => "https://github.com/marwendoukh/PullUpToRefresh-iOS.git", :tag => "#{s.version}" }
-s.source_files  = "PullUpToRefresh/PullUpToRefresh/**/*.{swift}"
+s.source_files  = "PullUpToRefresh/Source/**/*.{swift}"
 s.exclude_files = "Classes/Exclude"
-s.swift_version = "4.1"
+s.swift_version = "5.0"
 end
