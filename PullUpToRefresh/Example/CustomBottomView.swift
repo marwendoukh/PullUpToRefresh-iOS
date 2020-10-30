@@ -22,11 +22,11 @@ class CustomBottomView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.addSubview(label)
-        label.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
-        label.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
-        label.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        label.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        self.addSubview(self.label)
+        self.label.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
+        self.label.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
+        self.label.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        self.label.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     }
     
     required init?(coder: NSCoder) {

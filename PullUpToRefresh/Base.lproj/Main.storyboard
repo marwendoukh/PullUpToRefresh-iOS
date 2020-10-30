@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,8 +27,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7id-mf-dUZ">
-                                                    <rect key="frame" x="166.5" y="39" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7id-mf-dUZ">
+                                                    <rect key="frame" x="0.0" y="39" width="375" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -38,7 +38,7 @@
                                                 <constraint firstItem="7id-mf-dUZ" firstAttribute="centerX" secondItem="Ka0-7V-ovA" secondAttribute="centerX" id="QzK-U2-arJ"/>
                                                 <constraint firstItem="7id-mf-dUZ" firstAttribute="centerY" secondItem="Ka0-7V-ovA" secondAttribute="centerY" id="WUn-gM-7Ko"/>
                                                 <constraint firstItem="7id-mf-dUZ" firstAttribute="height" secondItem="Ka0-7V-ovA" secondAttribute="height" multiplier="0.212121" id="ZgW-aA-ob4"/>
-                                                <constraint firstItem="7id-mf-dUZ" firstAttribute="width" secondItem="Ka0-7V-ovA" secondAttribute="width" multiplier="0.112" id="kLy-3e-mLM"/>
+                                                <constraint firstItem="7id-mf-dUZ" firstAttribute="width" secondItem="Ka0-7V-ovA" secondAttribute="width" id="kLy-3e-mLM"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -53,6 +53,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ExR-el-Efu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="L18-Su-SeW"/>
@@ -60,7 +61,6 @@
                             <constraint firstItem="ExR-el-Efu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ML1-i8-6dr"/>
                             <constraint firstItem="ExR-el-Efu" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="gKh-nW-ipm"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="tableview" destination="ExR-el-Efu" id="Fdg-ru-03h"/>

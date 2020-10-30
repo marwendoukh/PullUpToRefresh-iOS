@@ -17,12 +17,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         // set the distance required to scroll , after that the DidPullUp will be fired
-        tableview?.refreshThreshold = 20
+        self.tableview?.refreshThreshold = 20
         // set the distance required to scroll , after that the bottomView will show up
-        tableview?.differenceThreshold = 100
+        self.tableview?.differenceThreshold = 100
         // set the bottom view frame
-        bottom.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 50)
-        tableview?.bottomView = bottom
+        self.bottom.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 50)
+        self.tableview?.bottomView = self.bottom
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
